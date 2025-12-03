@@ -1,0 +1,236 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1em 2em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.header-center h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+}
+
+.header-right a {
+  margin-left: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.8em;
+}
+
+.casos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.caso {
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta-amarilla {
+  background-color: #fff9c4;
+}
+
+.tarjeta-roja {
+  background-color: #ffcdd2;
+}
+
+.tarjeta-verde {
+  background-color: #c8e6c9;
+}
+
+.caso h3 {
+  margin-top: 0;
+}
+
+.caso a {
+  display: inline-block;
+  margin-top: 1em;
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.caso a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #c8e6c9;
+}
+
+.caso-detalle {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.analisis-algoritmo {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: #f1f8e9;
+  border-radius: 10px;
+}
+
+.analisis-algoritmo h3 {
+  margin-top: 0;
+}
+
+.acciones-caso {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.btn {
+  background-color: #388e3c;
+  color: white !important;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secundario {
+  background-color: #d32f2f;
+  color: white !important;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+input, select {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;}
+
+.configuracion {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.config-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1.5em;
+}
+
+.config-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f1f8e9;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.config-card h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #2e7d32;
+}
+
+.config-card p {
+  margin: 0.5em 0 1em;
+  color: #555;
+}
+
+.config-card .btn {
+  display: inline-block;
+}
+
+.perfil-nombre {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.perfil-nombre h3 {
+  margin: 0;
+  font-size: 1.6em;
+  color: #2e7d32;
+}
+
+.perfil-nombre .usuario {
+  margin: 0.3em 0 0;
+  font-size: 1.1em;
+  color: #555;
+}

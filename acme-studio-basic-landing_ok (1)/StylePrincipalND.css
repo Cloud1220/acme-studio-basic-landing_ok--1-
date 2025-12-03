@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1em 2em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.header-center h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+}
+
+.header-right a {
+  margin-left: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.registro {
+  text-align: center;
+  gap: 1.5rem;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #388e3c;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #c8e6c9;
+  padding: 1em;
+  text-align: center;
+}
+
+footer nav {
+  margin-bottom: 0.5em;
+}
+
+footer a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.imagen-central {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.imagenDoctora {
+  width: 220px;
+  height: auto;
+}

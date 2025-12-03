@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de contactos de emergencia</title>
+  <link rel="stylesheet" href="StyleCasosND.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <img src="Imagenes/logo_NeoDiag.png" alt="Logo NeoDiag" class="logo">
+      </div>
+
+      <div class="header-center">
+        <h1>Bienvenida, Dr. Melisa</h1>
+      </div>
+
+      <nav class="header-right">
+        <a href="Proyecto.html">Inicio</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="ajustes.html">Ajustes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Registro de contactos de emergencia</h2>
+
+    <!-- Formulario para registrar un nuevo contacto -->
+    <form id="formContacto">
+      <div class="form-group">
+        <label for="paciente">Paciente</label>
+        <select id="paciente" name="paciente" required>
+          <option value="">Seleccione un paciente</option>
+          <option value="Lucía Huamán">Lucía Huamán (Espina bífida)</option>
+          <option value="Sebastián Torres">Sebastián Torres (Síndrome de Edwards)</option>
+          <option value="Ariana Ríos">Ariana Ríos (Hipotiroidismo congénito)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre del contacto</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="relacion">Relación</label>
+        <input type="text" id="relacion" name="relacion" placeholder="Ej: Madre, Padre, Tutor" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="acciones-caso">
+        <button type="submit" class="btn">Registrar contacto</button>
+        <a href="Proyecto.html" class="btn btn-secundario">Cancelar</a>
+      </div>
+    </form>
+
+    <!-- Tabla de contactos registrados -->
+    <section class="casos-container">
+      <div class="caso tarjeta-verde">
+        <h3>Lucía Huamán</h3>
+        <p><strong>Diagnóstico:</strong> Espina bífida</p>
+        <table>
+          <tr><th>Nombre</th><th>Relación</th><th>Teléfono</th></tr>
+          <tr><td>María Huamán</td><td>Madre</td><td>987654321</td></tr>
+          <tr><td>José Huamán</td><td>Padre</td><td>912345678</td></tr>
+        </table>
+      </div>
+
+      <div class="caso tarjeta-roja">
+        <h3>Sebastián Torres</h3>
+        <p><strong>Diagnóstico:</strong> Síndrome de Edwards</p>
+        <table>
+          <tr><th>Nombre</th><th>Relación</th><th>Teléfono</th></tr>
+          <tr><td>Ana Torres</td><td>Madre</td><td>999888777</td></tr>
+        </table>
+      </div>
+
+      <div class="caso tarjeta-amarilla">
+        <h3>Ariana Ríos</h3>
+        <p><strong>Diagnóstico sugerido:</strong> Hipotiroidismo congénito</p>
+        <table>
+          <tr><th>Nombre</th><th>Relación</th><th>Teléfono</th></tr>
+          <tr><td>Carlos Ríos</td><td>Padre</td><td>955443322</td></tr>
+          <tr><td>Lucía Pérez</td><td>Tutora</td><td>944332211</td></tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NeoDiag</p>
+  </footer>
+
+  <script src="contactosEmergencia.js"></script>
+</body>
+</html>

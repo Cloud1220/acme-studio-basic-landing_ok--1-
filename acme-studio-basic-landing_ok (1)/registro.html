@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Caso Nuevo</title>
+  <link rel="stylesheet" href="StyleCasosND.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <img src="Imagenes/logo_NeoDiag.png" alt="Logo NeoDiag" class="logo">
+      </div>
+      <div class="header-center">
+        <h1>Bienvenida, Dr. Melisa</h1>
+      </div>
+      <nav class="header-right">
+        <a href="Proyecto.html">Inicio</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="ajustes.html">Ajustes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Registro de Caso Nuevo</h2>
+    <section class="caso-detalle tarjeta-verde">
+      <form id="registro-form">
+  <div class="form-group">
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" name="nombres" required>
+  </div>
+
+  <div class="form-group">
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required>
+  </div>
+
+  <div class="form-group">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
+  </div>
+
+  <div class="form-group">
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+      <option value="">Seleccionar</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Otro">Otro</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion">
+  </div>
+
+  <div class="form-group">
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo">
+  </div>
+
+  <div class="form-group">
+    <label for="telefono">Número de Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+  </div>
+
+  <button type="submit" class="btn">Registrar Nuevo Caso</button>
+</form>
+    </section>
+
+    <section id="confirmacion" class="caso-detalle tarjeta-amarilla" style="display:none;">
+      <h3>Caso Registrado Correctamente</h3>
+      <p>Se ha asignado el siguiente identificador al paciente: <strong>@Paciente147</strong></p>
+      <a href="Proyecto.html" class="btn">Aceptar</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NeoDiag</p>
+  </footer>
+
+  <script src="registroJava.js">
+  </script>
+</body>
+</html>

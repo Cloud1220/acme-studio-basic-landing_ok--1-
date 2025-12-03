@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Envío de reporte por correo electrónico</title>
+  <link rel="stylesheet" href="StyleCasosND.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <img src="Imagenes/logo_NeoDiag.png" alt="Logo NeoDiag" class="logo">
+      </div>
+
+      <div class="header-center">
+        <h1>Bienvenida, Dr. Melisa</h1>
+      </div>
+
+      <nav class="header-right">
+        <a href="Proyecto.html">Inicio</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="ajustes.html">Ajustes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="titulo-seccion">Envío de reporte por correo electrónico</h2>
+
+    <form id="formReporte">
+      <div class="form-group">
+        <label for="destinatario">Correo del especialista</label>
+        <input type="email" id="destinatario" name="destinatario" placeholder="ejemplo@hospital.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje opcional</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba un mensaje adicional..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="archivo">Adjuntar reporte en PDF</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf" required>
+      </div>
+
+      <div class="acciones-caso">
+        <button type="submit" class="btn">Enviar reporte</button>
+        <a href="Proyecto.html" class="btn btn-secundario">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 NeoDiag</p>
+  </footer>
+
+  <script src="enviarReporte.js"></script>
+</body>
+</html>
+
+
